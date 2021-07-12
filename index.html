@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #e6eff6;
+            font-size: 16px;
+            font-family: cursive;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 2px 20px lightgray;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 580px;
+            /* padding: 52px 48px; */
+        }
+        
+        .top-section {
+            padding: 30px;
+            background: #fff;
+        }
+        
+        .join-title {
+            color: #2ab2af;
+        }
+        
+        .join_sub-title {
+            margin: 15px 0px 15px 0;
+            color: #adc932;
+        }
+        
+        .join-description {
+            color: #98a6bd;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            font-size: 15px;
+        }
+        
+        .sub_section-left {
+            background: #2bb3b1;
+            padding: 30px;
+            color: #fff;
+        }
+        
+        .subscription_sub-title {
+            margin: 15px 0px 15px 0;
+        }
+        
+        .subscription_sub-title span {
+            color: #98a6bd;
+        }
+        
+        .subscription-description {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .signup-btn {
+            text-decoration: none;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            background: #bfdf32;
+            box-shadow: 2px 2px 5px #98a6bd;
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .sub_section-right {
+            background: #4abebd;
+            padding: 30px;
+            color: #fff;
+        }
+        
+        .whyUs-description {
+            margin: 15px 0px 25px 0;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            margin-top: 20%;
+            line-height: 1.5rem;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:754px) {
+            body {
+                font-family: serif;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 25px;
+            }
+            /* .top-section {
+                width: 100%;
+            } */
+            .join-title,
+            .join_sub-title,
+            .subscription_sub-title,
+            .whyUs-title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            /* .whyUs-description {
+                width: 80%;
+            } */
+            .bottom-section {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="top-section">
+            <h1 class="join-title">Join our community</h1>
+            <h2 class="join_sub-title">30-day, hassle-free money back guarantee</h2>
+            <p class="join-description">
+                Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+            </p>
+        </div>
+        <div class="bottom-section">
+            <div class="sub_section-left">
+                <h2 class="subscription-title">Monthly Subscription</h2>
+                <h2 class="subscription_sub-title">&dollar;29 <span>per month</span> </h2>
+                <p class="subscription-description">Full access for less than &dollar;1 a day</p>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            <div class="sub_section-right">
+                <h1 class="whyUs-title">why Us</h1>
+                <p class="whyUs-description">Tutorials by industry experts Peer &amp; expert code review Coding exercises Access to our GitHub repos Community forum Flashcard decks New videos every week</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
